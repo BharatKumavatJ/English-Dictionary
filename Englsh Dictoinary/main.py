@@ -5,6 +5,11 @@ dictionary = json.load(open("./data.json"))
 
 
 def translate(token: str) -> list:
+    '''Takes an english word and return the meaning of that word.
+
+    :param token: English word.
+    :return: meaning of english word.
+    '''
     token = token.lower()
 
     if dictionary.get(token) is not None:
